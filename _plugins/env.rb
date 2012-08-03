@@ -1,0 +1,3 @@
+ENV['I18N_LOCALES'] = '_i18n'
+
+Jekyll::ENV = (ENV['I18N_LOCALES'])

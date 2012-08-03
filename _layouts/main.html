@@ -1,0 +1,44 @@
+{% include header.html %}
+<a class="fork" href="https://github.com/isobar-idev/code-standards/" target="_blank"><span class="visuallyhidden">Fork Us</span></a>
+
+<div id="container">
+	<header role="banner">
+		<nav id="locale">
+			<ul id="flags">
+				<li><a data-lang="en" title="English"><img src="img/en.png" alt="English" /></a></li>
+				<li><a data-lang="es" title="Spanish" ><img src="img/es.png" alt="Spanish" /></a></li>
+			</ul>
+		</nav>
+		
+		<h1><a id="logo" href="{{ site.url }}" class="visuallyhidden">Roundarch Isobar</a></h1>
+		
+		<canvas id="canvas-logo" width="500" height="300">
+			<strong>{% t NO_CANVAS %}</strong>
+		</canvas>
+
+		<ul id="social">
+			<li><a class="icon" href="http://www.shareaholic.com/api/share/?v=1&apitype=1&apikey=8943b7fd64cd8b1770ff5affa9a9437b&service=5&title=Isobar%20North%20America's%20Coding%20Standards%20and%20Frontend%20development%20Best%20Practices&link=http://na.isobar.com/standards/&source=Shareaholic" id="facebook"></a></li>
+			<li><a class="icon" href="http://www.shareaholic.com/api/share/?v=1&apitype=1&apikey=8943b7fd64cd8b1770ff5affa9a9437b&service=7&title=Isobar%20North%20America's%20Coding%20Standards%20and%20Frontend%20development%20Best%20Practices&link=http://na.isobar.com/standards/&source=Shareaholic" id="twitter"></a></li>
+			<li><a class="icon" href="http://www.shareaholic.com/api/share/?v=1&apitype=1&apikey=8943b7fd64cd8b1770ff5affa9a9437b&service=2&title=Isobar%20North%20America's%20Coding%20Standards%20and%20Frontend%20development%20Best%20Practices&link=http://na.isobar.com/standards/&source=Shareaholic" id="delicious"></a></li>
+			<li><a href="http://na.isobar.com" id="linkback">{% t LINKBACK %}</a></li>
+		</ul>
+	</header>
+
+	<div id="main" role="document">
+		<!-- /////////////////////////// -->
+		<!-- Load the Content files here -->
+		<!-- /////////////////////////// -->
+		
+		{{ content | expand_urls: root_url }}
+		
+	</div><!--! End of #main section !-->
+	
+	<nav id="side" class="nav-right" role="navigation">
+		<h3 class="toc-title">{% t NAV_TITLE %}</h3>
+		<ul id="toc" style="display:none"></ul>
+		<noscript><p><a href="http://enable-javascript.com">{% t NO_JAVASCRIPT %}</a>.</p></noscript>
+	</nav>
+	
+</div><!--! end of #container !-->
+
+{% include footer.html %}

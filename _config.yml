@@ -1,0 +1,35 @@
+server: true
+auto: true
+
+root_url: localhost:4000
+
+# ----------------------- #
+#        Sections         #
+# ----------------------- #
+
+sections_dir: _sections
+
+section_layout: main
+
+sections:
+- 'general.html'
+- 'markup.html'
+- 'css.html'
+- 'javascript.html'
+- 'accessibility.html'
+- 'performance.html'
+- 'browsers.html'
+- 'seo.html'
+- 'codeReviews.html'
+- 'appendices.html'
+- 'revisionHistory.html'
+
+# ----------------------- #
+#        Language         #
+# ----------------------- #
+
+languages:
+- 'en'
+- 'es'
+
+i18n_dir: _i18n
